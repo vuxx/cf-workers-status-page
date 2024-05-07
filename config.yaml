@@ -18,11 +18,11 @@ monitors:
   - id: token-vuxx-cc # unique identifier
     name: token.vuxx.cc
     description: 'chatgpt token.' # default=empty
-    url: 'https://token.vuxx.cc/' # URL to fetch
+    url: 'https://token.vuxx.cc' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    linkable: true # allows the title to be a link, default=true
 
   - id: new-oaifree-com/
     name: new.oaifree.com
@@ -31,5 +31,28 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
+
+   - id: workers-cloudflare-com # unique identifier
+    name: workers.cloudflare.com
+    description: 'You write code. They handle the rest.' # default=empty
+    url: 'https://workers.cloudflare.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
+  - id: www-cloudflare-com
+    name: www.cloudflare.com
+    description: 'Built for anything connected to the Internet.'
+    url: 'https://www.cloudflare.com'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+  - id: blog-cloudflare-com
+    name: The Cloudflare Blog
+    url: 'https://blog.cloudflare.com/'
+    method: GET
+    expectStatus: 200
 
 
