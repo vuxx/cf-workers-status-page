@@ -15,7 +15,7 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: token-vuxx-cc # unique identifier
+ - id: token-vuxx-cc # unique identifier
     name: token.vuxx.cc
     description: 'chatgpt token.' # default=empty
     url: 'https://token.vuxx.cc' # URL to fetch
